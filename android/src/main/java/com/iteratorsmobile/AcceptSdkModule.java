@@ -1,4 +1,4 @@
-package com.iteratorsmobile;
+package com.iteratorsmobile.lib.accept;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;

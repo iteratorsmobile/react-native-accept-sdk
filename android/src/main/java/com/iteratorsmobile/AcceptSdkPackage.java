@@ -1,4 +1,4 @@
-package com.iteratorsmobile;
+package com.iteratorsmobile.lib.accept;
 
 import java.util.Arrays;
 import java.util.Collections;
