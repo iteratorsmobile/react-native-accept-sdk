@@ -1,12 +1,12 @@
 {
-  "name": "react-native-accept-sdk",
+  "name": "@iteratorsmobile/react-native-accept-sdk",
   "title": "React-native AcceptSDK",
   "version": "1.0.0",
   "description": "React-native bindings for AcceptSDK (Authorize.net)",
   "homepage": "https://github.com/iteratorsmobile/react-native-accept-sdk#README",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\" && exit 0"
   },
   "repository": {
     "type": "git",

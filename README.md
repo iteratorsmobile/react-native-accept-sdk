@@ -3,23 +3,26 @@
 
 ## Getting started
 
-add to package.json:
-```
-"react-native-accept-sdk": "git://github.com/iteratorsmobile/react-native-accept-sdk"
-```
+`$ npm install @iteratorsmobile/react-native-accept-sdk --save`
+
+or 
+
+`$ yarn add @iteratorsmobile/react-native-accept-sdk`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-accept-sdk`
+`$ react-native link @iteratorsmobile/react-native-accept-sdk`
 
 ## Usage
 
 ```typescript
-import  AcceptSdk  from  'react-native-accept-sdk';
+import AcceptSdk from '@iteratorsmobile/react-native-accept-sdk';
+```
+```typescript
 AcceptSdk.getTokenWithRequest(tokenRequest: TokenRequest, isProduction: boolean)
 ```
 ```typescript
-interface  TokenRequest {
+interface TokenRequest {
 	loginId: string;
 	clientKey: string;
 	cardNumber: string;
