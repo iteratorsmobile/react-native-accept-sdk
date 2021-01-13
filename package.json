@@ -1,7 +1,7 @@
 {
   "name": "@iteratorsmobile/react-native-accept-sdk",
   "title": "React-native AcceptSDK",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React-native bindings for AcceptSDK (Authorize.net)",
   "homepage": "https://github.com/iteratorsmobile/react-native-accept-sdk#README",
   "main": "index.js",
@@ -34,7 +34,7 @@
     "ios/",
     "index.js",
     "index.d.ts",
-    "react-native-config.podspec"
+    "react-native-accept-sdk.podspec"
   ],
   "types": "./index.d.ts"
 }
