@@ -19,6 +19,7 @@ import net.authorize.acceptsdk.datamodel.transaction.response.EncryptTransaction
 import net.authorize.acceptsdk.datamodel.transaction.response.ErrorTransactionResponse;
 
 public class AcceptSdkModule extends ReactContextBaseJavaModule {
+    private static final String ERROR_OBAINING_TOKEN = "ERROR_OBTAINING_TOKEN";
 
     private final ReactApplicationContext reactContext;
 
@@ -46,7 +47,7 @@ public class AcceptSdkModule extends ReactContextBaseJavaModule {
             acceptSDKApiClient.getTokenWithRequest(transactionObject, new EncryptTransactionCallback() {
                 @Override
                 public void onErrorReceived(ErrorTransactionResponse error) {
-                    promise.reject("An error occured while obtaining token.", "");
+                    promise.reject(ERROR_OBAINING_TOKEN, "An error occured while obtaining token.");
                 }
                 @Override
                 public void onEncryptionFinished(EncryptTransactionResponse encryptionResponse) {
@@ -57,7 +58,7 @@ public class AcceptSdkModule extends ReactContextBaseJavaModule {
                 }
             });
         } catch (Exception e) {
-            promise.reject(e.getMessage(), "");
+            promise.reject(ERROR_OBAINING_TOKEN, e.getMessage());
         }
     }
 

@@ -21,7 +21,7 @@ RCT_EXPORT_METHOD(getTokenWithRequest: (NSDictionary *)tokenRequest isProduction
         NSDictionary *responseDictionary = @{@"dataDescriptor": token.getOpaqueData.getDataDescriptor, @"dataValue": token.getOpaqueData.getDataValue};
         resolve(responseDictionary);
     } failureHandler:^(AcceptSDKErrorResponse * _Nonnull error) {
-        reject(@"getTokenWithRequest error", [[[[error getMessages] getMessages] objectAtIndex: 0] getText], nil);
+        reject(@"ERROR_OBTAINING_TOKEN", @"An error occured while obtaining token.", nil);
     }];
 }
 

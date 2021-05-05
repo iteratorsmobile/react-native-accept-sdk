@@ -35,7 +35,7 @@ buildscript {
             jcenter()
         }
         dependencies {
-            classpath 'com.android.tools.build:gradle:4.0.2'
+            classpath 'com.android.tools.build:gradle:4.1.3'
         }
     }
 }
@@ -75,7 +75,7 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
-    implementation 'net.authorize:accept-sdk-android:1.0.2'
+    implementation 'net.authorize:accept-sdk-android:1.0.3'
 }
 
 def configureReactNativePom(def pom) {
