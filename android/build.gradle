@@ -75,7 +75,7 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
-    implementation 'net.authorize:accept-sdk-android:1.0.3'
+    implementation 'net.authorize:accept-sdk-android:1.0.2'
 }
 
 def configureReactNativePom(def pom) {
