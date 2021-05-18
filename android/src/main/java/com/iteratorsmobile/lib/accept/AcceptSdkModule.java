@@ -47,7 +47,7 @@ public class AcceptSdkModule extends ReactContextBaseJavaModule {
             acceptSDKApiClient.getTokenWithRequest(transactionObject, new EncryptTransactionCallback() {
                 @Override
                 public void onErrorReceived(ErrorTransactionResponse error) {
-                    promise.reject(ERROR_OBAINING_TOKEN, "An error occured while obtaining token.");
+                    promise.reject(ERROR_OBAINING_TOKEN, error.getFirstErrorMessage().getMessageText());
                 }
                 @Override
                 public void onEncryptionFinished(EncryptTransactionResponse encryptionResponse) {
